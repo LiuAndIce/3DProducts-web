@@ -6,6 +6,11 @@
 
 ---
 
+##在线演示地址
+https://3dproducts-web.netlify.app/
+
+<img width="1838" height="866" alt="image" src="https://github.com/user-attachments/assets/d30f2c32-b51e-49e9-96ad-20f4f69dcf1b" />
+
 ## Preview Highlights
 
 - 全屏 `canvas` 英雄区，滚动直接驱动 WebP 序列播放
