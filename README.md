@@ -118,4 +118,4 @@ http://localhost:4173/
 
 ## License
 
-如需开源发布，请按你的需要补充 `LICENSE` 文件。
+本项目采用 MIT License 开源，任何人都可以自由使用、修改、分发和用于商业用途。
