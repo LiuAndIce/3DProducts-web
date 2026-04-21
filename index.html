@@ -1,0 +1,273 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>芒果美味 | 电影感功能性汽水</title>
+    <meta
+      name="description"
+      content="芒果美味，一个现代功能性汽水品牌，受经典口味启发，但采用更好的原料制作。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="grain"></div>
+
+    <div class="loading-screen" id="loadingScreen" aria-live="polite">
+      <div class="loading-shell">
+        <p class="loading-kicker">MANGO DELIGHT</p>
+        <h1 class="loading-title">芒果美味</h1>
+        <p class="loading-copy">正在载入电影序列与滚动场景。</p>
+        <div class="loading-bar">
+          <span class="loading-bar-fill" id="loadingBarFill"></span>
+        </div>
+        <p class="loading-percent" id="loadingPercent">0%</p>
+      </div>
+    </div>
+
+    <header class="site-header" id="siteHeader">
+      <a class="brand" href="#hero">
+        <span class="brand-mark"></span>
+        <span class="brand-copy">
+          <strong>芒果美味</strong>
+          <small>FUNCTIONAL SODA</small>
+        </span>
+      </a>
+
+      <nav class="top-nav" aria-label="主导航">
+        <a href="#product">产品</a>
+        <a href="#ingredients">成分</a>
+        <a href="#nutrition">营养</a>
+        <a href="#reviews">评论</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">联系我们</a>
+      </nav>
+
+      <div class="header-mode">DARK MODE</div>
+    </header>
+
+    <main>
+      <section class="hero-scroll" id="hero">
+        <div class="hero-stage">
+          <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+          <div class="hero-scrim"></div>
+
+          <div class="hero-grid">
+            <div class="hero-copy" id="heroCopy">
+              <p class="eyebrow" id="heroEyebrow">MANGO DELIGHT</p>
+              <h1 class="hero-title" id="heroTitle">黑芒气泡</h1>
+              <h2 class="hero-subtitle" id="heroSubtitle">NOCTURNE FIZZ</h2>
+              <p class="hero-description" id="heroDescription">
+                一个现代功能性汽水品牌，受经典口味启发，但采用更好的原料制作。黑芒气泡把成熟芒果的厚度、利落气泡和干净配方压进一罐夜色般克制的提神口感。
+              </p>
+
+              <div class="hero-actions">
+                <a class="button button-ghost" href="#product">ADD TO</a>
+                <a class="button button-solid" href="#contact">CART</a>
+              </div>
+            </div>
+
+            <div class="hero-center-mark">
+              <p>SCROLL TO PLAY THE CANVAS</p>
+            </div>
+
+            <aside class="variant-panel" aria-label="风味切换">
+              <div class="variant-index" id="variantIndex">01</div>
+              <div class="variant-rail">
+                <button class="variant-control" id="prevVariant" type="button">
+                  <span>PREV</span>
+                  <strong>&uarr;</strong>
+                </button>
+                <span class="variant-divider"></span>
+                <button class="variant-control" id="nextVariant" type="button">
+                  <span>NEXT</span>
+                  <strong>&darr;</strong>
+                </button>
+                <span class="variant-loader" id="variantLoader" aria-hidden="true"></span>
+              </div>
+            </aside>
+          </div>
+
+          <div class="hero-socials" aria-label="社交媒体">
+            <a href="#" aria-label="Twitter / X">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M18.9 2H22l-6.77 7.74L23 22h-6.1l-4.77-6.24L6.66 22H3.55l7.24-8.27L1 2h6.25l4.31 5.7L18.9 2Z"></path>
+              </svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5Zm5.25-3a1.25 1.25 0 1 1-1.25 1.25 1.25 1.25 0 0 1 1.25-1.25Z"></path>
+              </svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.5 1.6-1.5H17V4.9c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.4V11H7.5v3h2.8v8h3.2Z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section intro-section" id="product">
+        <div class="section-head">
+          <p class="section-kicker">PRODUCT</p>
+          <h2>经典汽水的记忆，被重新配方。</h2>
+        </div>
+        <div class="split-layout">
+          <div class="story-block">
+            <p>
+              芒果美味把熟悉的汽水快乐拆开重组：更明亮的果香、更干净的配料、更有节奏的气泡。品牌以经典罐装饮料为灵感，但把多余的负担换成现代功能性表达。
+            </p>
+            <p>
+              入口是芒果的热带厚度，落点却利落、收干。我们用克制的黑白叙事承托液体和金属的高光，让每一口都像一帧被拉长的电影镜头。
+            </p>
+          </div>
+          <div class="flavor-grid" id="flavorGrid"></div>
+        </div>
+      </section>
+
+      <section class="content-section" id="ingredients">
+        <div class="section-head">
+          <p class="section-kicker">INGREDIENTS</p>
+          <h2>干净成分，明确功效。</h2>
+        </div>
+        <div class="benefit-grid">
+          <article class="benefit-card">
+            <span>01</span>
+            <h3>真果汁浓缩</h3>
+            <p>提供饱满芒果风味和自然香气，不靠过量香精堆砌口感。</p>
+          </article>
+          <article class="benefit-card">
+            <span>02</span>
+            <h3>气泡矿物水</h3>
+            <p>更细密的碳酸结构，入口轻盈，尾段仍保留清晰刺激感。</p>
+          </article>
+          <article class="benefit-card">
+            <span>03</span>
+            <h3>维生素 B 群</h3>
+            <p>为通勤、训练与夜间工作提供更现代的功能性补给逻辑。</p>
+          </article>
+          <article class="benefit-card">
+            <span>04</span>
+            <h3>低糖配方</h3>
+            <p>减少甜腻停留，让风味更干净，饮后更利落。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section" id="nutrition">
+        <div class="section-head">
+          <p class="section-kicker">NUTRITION</p>
+          <h2>营养标签，做得像产品本身一样干净。</h2>
+        </div>
+        <div class="nutrition-panel">
+          <div class="nutrition-card emphasis">
+            <small>PER CAN / 330ML</small>
+            <strong>58 KCAL</strong>
+            <p>轻盈热量结构，适合日常替代高糖碳酸饮料。</p>
+          </div>
+          <div class="nutrition-card">
+            <small>SUGAR</small>
+            <strong>6G</strong>
+          </div>
+          <div class="nutrition-card">
+            <small>FIBER</small>
+            <strong>4G</strong>
+          </div>
+          <div class="nutrition-card">
+            <small>VITAMIN B6</small>
+            <strong>40%</strong>
+          </div>
+          <div class="nutrition-card">
+            <small>CAFFEINE</small>
+            <strong>35MG</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="reviews">
+        <div class="section-head">
+          <p class="section-kicker">REVIEWS</p>
+          <h2>来自第一批重度回购者的反馈。</h2>
+        </div>
+        <div class="review-grid">
+          <article class="review-card">
+            <div class="rating">★★★★★</div>
+            <p>“像高级版芒果汽水，气泡很细，甜度也比我预期低很多。”</p>
+            <strong>林芷晴 / 创意总监</strong>
+          </article>
+          <article class="review-card">
+            <div class="rating">★★★★★</div>
+            <p>“训练后喝不腻，果感是真实的，不像功能饮料那种化学冲击。”</p>
+            <strong>魏成 / 自由教练</strong>
+          </article>
+          <article class="review-card">
+            <div class="rating">★★★★☆</div>
+            <p>“包装和网页一样有电影感，办公室冰箱里最先被拿走的就是这罐。”</p>
+            <strong>周屿 / 产品经理</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section" id="faq">
+        <div class="section-head">
+          <p class="section-kicker">FAQ</p>
+          <h2>关于这罐饮料，常见问题一次说明。</h2>
+        </div>
+        <div class="faq-list">
+          <details open>
+            <summary>芒果美味和传统芒果汽水最大的区别是什么？</summary>
+            <p>我们降低了糖负担，加入功能性营养补充，并用更真实的果香与更细致的气泡结构替代厚重甜感。</p>
+          </details>
+          <details>
+            <summary>是否适合运动后或长时间工作时饮用？</summary>
+            <p>可以。配方强调轻补给和清爽刺激，适合作为训练后或下午状态回升时的功能性选择。</p>
+          </details>
+          <details>
+            <summary>是否含有人工色素或高果糖浆？</summary>
+            <p>不使用高果糖浆，整体配方更强调干净标签与可读性。</p>
+          </details>
+          <details>
+            <summary>口味切换后为什么仍保持同一段电影序列？</summary>
+            <p>当前项目资源中提供的是一组芒果序列，页面已支持按变体切换独立序列，后续只需替换数据中的帧路径即可接入更多风味动画。</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="content-section cta-section" id="contact">
+        <div class="cta-shell">
+          <p class="section-kicker">FINAL POUR</p>
+          <h2>让下一罐功能性汽水，不只是解渴。</h2>
+          <p>
+            为零售、联名与渠道合作预留专属批次。联系我们，拿到产品册、试饮包与品牌合作方案。
+          </p>
+          <div class="hero-actions">
+            <a class="button button-solid" href="mailto:hello@mangodelight.com">CONTACT US</a>
+            <a class="button button-ghost" href="#hero">BACK TO TOP</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <strong>芒果美味</strong>
+        <p>现代功能性汽水品牌，受经典口味启发，但采用更好的原料制作。</p>
+      </div>
+      <div class="footer-links">
+        <a href="#product">关于</a>
+        <a href="#contact">联系</a>
+        <a href="#">隐私政策</a>
+        <a href="#">条款</a>
+      </div>
+      <div class="footer-socials">
+        <a href="#">X</a>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </div>
+      <p class="footer-copy">© 2026 芒果美味 Mango Delight. All rights reserved.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
